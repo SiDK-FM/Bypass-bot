@@ -76,13 +76,13 @@ def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_
 
 # help command
 @app.on_message(filters.command(["help"])
-def send_help(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
+def send_help(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message)
     app.send_message(message.chat.id, HELP_TEXT, reply_to_message_id=message.id, disable_web_page_preview=True)
 
 
 # links
 @app.on_message(filters.text)
-def receive(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message)
+def receive(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
     bypass = threading.Thread(target=lambda:loopthread(message),daemon=True)
     bypass.start()
 
