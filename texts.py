@@ -95,6 +95,7 @@ shortnertext = """__- igg-games \n\
 - tnlink \n\
 - flashlink \n\
 - short2url \n\
+©️ maintained By :- @Fm_onr 🕊
 __"""
 
 
