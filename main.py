@@ -82,7 +82,7 @@ def send_help(client: pyrogram.client.Client, message: pyrogram.types.messages_a
 
 # links
 @app.on_message(filters.text)
-def receive(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
+def receive(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message)
     bypass = threading.Thread(target=lambda:loopthread(message),daemon=True)
     bypass.start()
 
